@@ -11,10 +11,7 @@ db();
 app.use(cors());
 app.use(express.json());
 
-//Routes
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
+
 
 app.use("/auth", require("./routes/auth"));
 
